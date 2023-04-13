@@ -1,17 +1,17 @@
-/*
-COLORS
+@use "./abstracts/functions";
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+@use "./base/base";
+@use "./base/topography";
+@use "./base/animations";
+@use "./base/utilities";
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
+@use "./components/components";
 
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
+@use "./layouts/flexbox";
+@use "./layouts/header";
+@use "./layouts/navigation";
+@use "./layouts/footer";
 
-*/
+@use "./pages/home";

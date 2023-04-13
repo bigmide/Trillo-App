@@ -1,0 +1,31 @@
+@use "../abstracts/functions";
+// @use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: functions.base-font-size(10px);
+
+  @include mixins.respondMin(var(--big-desktop)) {
+    font-size: functions.base-font-size(12px);
+  }
+
+  @include mixins.respondMax(var(--tablet-landscape)) {
+    font-size: functions.base-font-size(9px);
+  }
+
+  @include mixins.respondMax(var(--tablet-portrait)) {
+    font-size: functions.base-font-size(8px);
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
